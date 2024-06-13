@@ -1,0 +1,322 @@
+.light-mode {
+    color-scheme: light;
+}
+.dark-mode {
+    color-scheme: dark;
+}
+
+/* Estilos globales */
+body {
+    background-color: light-dark(#efedea, #121212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {    
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Contenedores principales */
+.habilidades, .educacion, .redes, .mode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    background: light-dark(#efedea, #1b1b1b);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los títulos */
+.presentacion .habilidades a {
+    font-size: 20px;
+}
+
+.presentacion p {
+    font-weight: 500;
+    font-size: 16px;
+    color: light-dark(black, rgb(168, 168, 168));
+}
+.card_row_presentacion_1 {
+    height: auto;
+    color: #cccccc;
+    padding: 20px;
+    background: light-dark(#efedea, #1b1b1b);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex: 2;
+    text-align: center;
+    align-items: center;
+}
+.card_row_presentacion_2 {
+    height: auto;
+    color: #cccccc;
+    padding: 20px;
+    background: light-dark(#efedea, #1b1b1b);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex: 1;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+.card_row_presentacion_2 img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Contenedor de proyectos */
+.container_row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 10px;
+}
+
+.card_row{
+    height: auto;
+    color: #cccccc;
+    padding: 20px;
+    background: light-dark(#efedea, #1b1b1b);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex: 1;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+.card_row img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Contenedor de hoja de vida */
+.cv img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Contenedor de foto */
+.foto img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    opacity: 80%;
+}
+
+.foto img:hover {
+    opacity: 100%;
+}
+
+/* Contenedor de habilidades */
+.habilidades {
+    height: auto;
+}
+
+.habilidades img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+}
+
+.habilidades img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    gap: 10px;
+}
+
+/* Contenedor de educación */
+.educacion {
+    height: auto;
+    padding: 20px;
+}
+
+/* Estilo de los enlaces */
+.titulo_card {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: light-dark(black, white);
+}
+
+/* Contenedor de las tarjetas */
+.educacion_card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo de las tarjetas */
+.educacion_card .card {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.educacion_card .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de las imágenes */
+.educacion_card img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Estilo del texto debajo de las imágenes */
+.educacion_card p {
+    font-weight: 500;
+    text-align: center;
+    width: 100px;
+    text-wrap: wrap;
+    margin-top: 10px;
+    font-size: 14px;
+    color: light-dark(black, white)
+}
+
+
+/* Contenedor de redes */
+.card_row_redes{
+    width: 100%;
+    height: auto;
+    color: #cccccc;
+    padding: 20px;
+    background: light-dark(#efedea, #1b1b1b);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+.card_row_redes img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+    opacity: 80%;
+}
+
+.card_row_redes img:hover {
+    transform: scale(1.2);
+    opacity: 100%;
+}
+.card_two {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card_column{
+    height: auto;
+    color: #cccccc;
+    padding: 20px;
+    background: light-dark(#efedea, #1b1b1b);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex: 1;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+.card_column img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    gap: 10px;
+}
+
+.redes .socials .github {
+    color: purple;
+}
+
+/* Estilos de cambio de tema */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Ocultar el checkbox HTML por defecto */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* El slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fffb17;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #02071e;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 3px #ffffff;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Sliders redondeados */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
